@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veterinary Hospital</title>
+<title>Adoption - Veterinary Hospital</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+    <img src="logo.png" alt="Hospital Logo" class="logo">
     <h1>Government Veterinary Hospital</h1>
     <p>Kodakara, Thrissur</p>
 </header>
@@ -25,15 +25,45 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section class="content">
+<section class="hero">
     <h2>Pet Adoption</h2>
-    <p>Adopt rescued animals and give them a loving home.</p>
+    <p>Give a loving home to rescued animals</p>
+</section>
+
+<section class="pets-grid">
+
+<section class="content">
+    <h2>Adoption Request</h2>
+
+    <form class="adoption-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Pet Name" required>
+        <textarea placeholder="Why do you want to adopt?" required></textarea>
+        <button type="submit">Submit Request</button>
+    </form>
 </section>
 
 
-<footer>
-    <p>© 2026 Government Veterinary Hospital</p>
-</footer>
+<div class="pet-card">
+    <img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=400">
+    <h3>Rocky</h3>
+    <p>German Shepherd • 3 years</p>
+    <button>Adopt</button>
+</div>
 
-</body>
-</html>
+<div class="pet-card">
+    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400">
+    <h3>Luna</h3>
+    <p>Persian Cat • 2 years</p>
+    <button>Adopt</button>
+</div>
+
+<div class="pet-card">
+    <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400">
+    <h3>Thumper</h3>
+    <p>Rabbit • 1 year</p>
+    <button>Adopt</button>
+</div>
+
+</section>

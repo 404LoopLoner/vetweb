@@ -143,3 +143,67 @@ nav a:hover {
     margin-bottom: 10px;
     color: #2c7be5;
 }
+
+.pets-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.pet-card {
+    background: white;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pet-card:hover {
+    transform: translateY(-8px);
+}
+
+.pet-card button {
+    background: #2c7be5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pet-card button:hover {
+    background: #1f5fbf;
+}
+
+.adoption-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.adoption-form input,
+.adoption-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.adoption-form button {
+    background: #2c7be5;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
