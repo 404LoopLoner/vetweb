@@ -207,3 +207,16 @@ nav a:hover {
     border-radius: 6px;
     cursor: pointer;
 }
+
+.logo {
+    width: 120px;   /* change size here */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* centers the logo */
+    cursor: pointer;
+}
+
+.header-center {
+    text-align: center;
+    padding: 20px;
+}
