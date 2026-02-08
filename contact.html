@@ -3,16 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Veterinary Hospital</title>
+<title>Contact - Veterinary Hospital</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    
+<script>
+function submitForm(e) {
+    e.preventDefault();
+    alert("Thank you! We will contact you soon.");
+}
+</script>
+
 
 <header>
+    <a href="index.html">
+    <img src="logo.png" alt="Hospital Logo" class="logo">
+</a>
+
     <h1>Government Veterinary Hospital</h1>
     <p>Kodakara, Thrissur</p>
 </header>
@@ -25,12 +36,46 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section class="content">
+<section class="hero">
     <h2>Contact Us</h2>
-    <p>Phone: +91 XXXXX XXXXX</p>
-    <p>Email: example@email.com</p>
+    <p>We are here to help you and your animals</p>
 </section>
 
+<section class="services-grid">
+
+<div class="service-card">
+    <h3>Phone</h3>
+    <p>+91 4578 961 546</p>
+</div>
+
+<div class="service-card">
+    <h3>Email</h3>
+    <p>gvhkodakara@gmail.com</p>
+</div>
+
+<div class="service-card">
+    <h3>Location</h3>
+    <p>Kodakara, Thrissur, Kerala</p>
+</div>
+
+<div class="service-card">
+    <h3>Working Hours</h3>
+    <p>Mon–Sat: 9 AM – 1 PM<br>Emergency: 24/7</p>
+</div>
+
+</section>
+
+<section class="content">
+    <h2>Send a Message</h2>
+
+    <form class="adoption-form" onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
 <footer>
     <p>© 2026 Government Veterinary Hospital</p>
